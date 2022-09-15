@@ -1,8 +1,8 @@
-let iva = parseInt(prompt('Ingrese el iva del producto sin %'));
-let producto = parseInt(prompt('Ingrese el precio del producto'));
+let nombre = prompt('Ingrese el nombre del empleado');
+let horas = parseInt(prompt('Ingrese las horas trabajadas por el empleado'));
 
-let ivaP=producto*(iva/100);
-let total=producto+ivaP;
+let pagar=horas*15300;
 
-document.getElementById('pagar').innerHTML=total;
-document.getElementById('iva').innerHTML=ivaP;
+document.getElementById('nombre').innerHTML=nombre;
+document.getElementById('horas').innerHTML=horas;
+document.getElementById('pagar').innerHTML=pagar;
