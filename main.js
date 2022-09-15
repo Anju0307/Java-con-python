@@ -1,9 +1,6 @@
-alert('Programa para calcular la longitud y el area de una circunferencia');
+let espacio=parseInt(prompt('Ingrese el espacio del proyectil'));
+let tiempo=parseInt(prompt('Ingrese el tiempo del proyectil'));
 
-let radio=parseInt(prompt('Ingrese el radio de la circunferencia'));
+let velocidad = (espacio*1000)/(tiempo*60);
 
-let longitud= 2*Math.PI*radio;
-let area=Math.PI * Math.pow(radio,2);
-
-document.getElementById('longitud').innerHTML=longitud;
-document.getElementById('area').innerHTML=area;
+document.getElementById('velocidad').innerHTML=velocidad
