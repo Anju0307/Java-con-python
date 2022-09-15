@@ -1,8 +1,6 @@
-alert('Programa para calcular media');
-let media=0
-for (let i=0;i<4;i++){
-    let numero = parseInt(prompt('Ingrese un numero'));
-    media=numero+media;
-}
+let base = parseInt(prompt('Ingrese la base del triangulo'));
+let altura = parseInt(prompt('Ingrese la altura del triangulo'));
 
-document.getElementById('media').innerHTML=media/4
+let area= (base*altura)/2;
+
+document.getElementById('area').innerHTML=area;
