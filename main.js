@@ -1,6 +1,8 @@
-let lado1=parseInt(prompt('Ingrese el primer lado'));
-let lado2=parseInt(prompt('Ingrese el segundo lado'));
+alert('Programa para calcular media');
+let media=0
+for (let i=0;i<4;i++){
+    let numero = parseInt(prompt('Ingrese un numero'));
+    media=numero+media;
+}
 
-let area= lado1*lado2;
-
-document.getElementById('area').innerHTML=area;
+document.getElementById('media').innerHTML=media/4
