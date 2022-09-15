@@ -1,12 +1,6 @@
-let numero1 = prompt("Ingrese el primer numero")
-let numero2 = prompt("Ingrese el segundo numero")
+let lado1=parseInt(prompt('Ingrese el primer lado'));
+let lado2=parseInt(prompt('Ingrese el segundo lado'));
 
-let suma = parseInt(numero1) + parseInt(numero2);
-let resta = parseInt(numero1) - parseInt(numero2);
-let multiplicacion = parseInt(numero1) * parseInt(numero2);
-let division = parseInt(numero1) / parseInt(numero2);
+let area= lado1*lado2;
 
-document.getElementById('suma').innerHTML=suma
-document.getElementById('resta').innerHTML=resta
-document.getElementById('multiplicacion').innerHTML=multiplicacion
-document.getElementById('division').innerHTML=division
+document.getElementById('area').innerHTML=area;
