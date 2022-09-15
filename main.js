@@ -1,8 +1,8 @@
-let nombre = prompt('Ingrese el nombre del empleado');
-let horas = parseInt(prompt('Ingrese las horas trabajadas por el empleado'));
+let notaF=0;
+for (let i=1; i<=4;i++){
+    let nota = parseInt(prompt(`Digite la nota ${i}`));
+    notaF=nota+notaF;
+}
+let promedio=notaF/4;
 
-let pagar=horas*15300;
-
-document.getElementById('nombre').innerHTML=nombre;
-document.getElementById('horas').innerHTML=horas;
-document.getElementById('pagar').innerHTML=pagar;
+document.getElementById('promedio').innerHTML=promedio;
