@@ -1,6 +1,5 @@
-let espacio=parseInt(prompt('Ingrese el espacio del proyectil'));
-let tiempo=parseInt(prompt('Ingrese el tiempo del proyectil'));
+let radio = parseInt(prompt('Ingrese el radio de la esfera'))
 
-let velocidad = (espacio*1000)/(tiempo*60);
+let volumen = 4/3 * Math.PI * radio**3;
 
-document.getElementById('velocidad').innerHTML=velocidad
+document.getElementById('volumen').innerHTML=volumen;
