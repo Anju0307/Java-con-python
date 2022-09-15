@@ -1,7 +1,7 @@
-let a = parseInt(prompt('Ingrese el valor de a'));
-let b = parseInt(prompt('Ingrese el valor de b'));
-let c = parseInt(prompt('Ingrese el valor de c'));
+const precioMin=355;
 
-let volumen = (4/3) * Math.PI * a * b * c;
+let minuto = parseInt(prompt('Ingrese la cantidad de minutos hablados'));
 
-document.getElementById('volumen').innerHTML=volumen;
+let pagar = minuto*precioMin+((minuto*precioMin)*0.2);
+
+document.getElementById('pagar').innerHTML=pagar;
