@@ -1,7 +1,8 @@
-let a = parseInt(prompt('Ingrese el valor de A'));
-let b = parseInt(prompt('Ingrese el valor de B'));
-let c = parseInt(prompt('Ingrese el valor de C'));
+let radio = parseInt(prompt('Ingrese el radio del cilindro'));
+let altura = parseInt(prompt('Ingrese la altura del cilindro'));
 
-let total = (a+7*c)/(b+2-a)+2*b;
+let area = (2*(Math.PI*radio**2))+((2*Math.PI*radio)*altura);
+let volumen = (Math.PI*radio**2)*altura;
 
-document.getElementById('expresion').innerHTML=total;
+document.getElementById('area').innerHTML=area;
+document.getElementById('volumen').innerHTML=volumen;
